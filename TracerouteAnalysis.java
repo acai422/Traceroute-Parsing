@@ -86,9 +86,6 @@ public class TracerouteAnalysis {
 							if(writerMan == 0) {
 								printWriter.println(ttl);
 								printWriter.println(IP);
-								printWriter.println(timeDifference);
-								
-								writerMan ++;
 							} // end if(writerMan == 0)
 							
 							//every 3 intervals put some hyphens before the ttl to make it look nice
@@ -96,16 +93,11 @@ public class TracerouteAnalysis {
 								printWriter.println("--------------------------");
 								printWriter.println(ttl);
 								printWriter.println(IP);
-								printWriter.println(timeDifference);
-								
-								writerMan++;
 							} // end else if
 							
-							//otherwise just print out the time difference
-							else {
-								printWriter.println(timeDifference);
-								writerMan++;
-							} //end else
+							printWriter.println(timeDifference);
+							writerMan++;
+							
 							
 						} //end if(checkID.equals(id) && !checkID.equals("id 0"))
 						
