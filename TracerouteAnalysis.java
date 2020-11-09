@@ -92,7 +92,7 @@ public class TracerouteAnalysis {
 							} // end if(writerMan == 0)
 							
 							//every 3 intervals put some hyphens before the ttl to make it look nice
-							else if (writerMan % 3  == 0 && writerMan != 0) {
+							else if (writerMan % 3  == 0) {
 								printWriter.println("--------------------------");
 								printWriter.println(ttl);
 								printWriter.println(IP);
